@@ -18,17 +18,19 @@
         </div>
 
         <div id="innhold">
-            <h1 id="header1">Tire clicker</h1>
-            <h1 id="score">0</h1>
-            <div id="tire">
-                
-                <img onclick="dekk()" src="dekk.png" alt="">
+            <div id="hoved-side">
+                <h1 id="header1">Tire clicker</h1>
+                <h1 id="score">0</h1>
+                <div id="tire">
+                    
+                    <img onclick="dekk()" src="dekk.png" alt="">
+            </div>
             </div>
             
         </div>
 
         <div id="footer">
-            <h4>fotter</h4>
+           
         </div>
 
     </div>
@@ -37,9 +39,9 @@
    var i = 0;
    var x = 1;
    function dekk(){
-    i = i + x
+    i = i + x;
 
-    document.getElementById("score").innerHTML = i
+    document.getElementById("score").innerHTML = i;
     
 
     

@@ -75,4 +75,7 @@ ul {
     display: flex;
     justify-content: center;
   }
-  
+  #header1{
+    display: flex;
+    justify-content: center;
+  }

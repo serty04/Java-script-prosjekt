@@ -19,20 +19,33 @@
         </div>
 
         <div id="innhold">
-            <h1>Innhold</h1>
-            
+            <h1 id="score">0</h1>
             <div id="tire">
-                <h1>tire</h1>
+                
+                <img onclick="dekk()" src="dekk.png" alt="">
             </div>
             
         </div>
 
         <div id="footer">
-            footer
+            <h4>fotter</h4>
         </div>
 
     </div>
     
+<script>
+   var i = 0;
+   var x = 1;
+   function dekk(){
+    i = i + x
+
+    document.getElementById("score").innerHTML = i
     
+
+    
+
+   }
+
+</script>
 </body>
 </html>

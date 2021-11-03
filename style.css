@@ -1,12 +1,13 @@
 * {
     margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 div{
     border: solid 1px black;
 }
 html body{
-  width: 100%;
+  min-height: 100vh;
   background-color: rgb(101, 101, 189);
 }
 #header{
@@ -27,21 +28,28 @@ html body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-}
+  }
 #tire{
 
 }
 #footer{
-flex-wrap: wrap;
-}
+    border-top: solid black 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:auto; 
+    bottom: 0;
+
+  }
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(101, 101, 189);
-  }
+    background-color: rgb(0, 0, 0);
+  } 
   
   li {
     float: left;
@@ -49,6 +57,7 @@ ul {
   
   li a {
     display: block;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -58,3 +67,12 @@ ul {
   li a:hover {
     background-color: #111;
   }
+  #tire{
+    display: flex;
+    justify-content: center;
+  }
+  #score{
+    display: flex;
+    justify-content: center;
+  }
+  

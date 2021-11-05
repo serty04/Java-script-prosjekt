@@ -24,9 +24,7 @@
                 <div id="tire">
                     
                     <img onclick="dekk()" src="dekk.png" alt="">
-            </div>
-            </div>
-            
+                </div>
         </div>
 
         <div id="footer">
@@ -36,14 +34,18 @@
     </div>
     
 <script>
-   var i = 0;
-   var x = 1;
+   var antall_dekk = 0;
+   var per_dekk_klikk = 1;
    function dekk(){
-    i = i + x;
+    antall_dekk = antall_dekk + per_dekk_klikk;
 
-    document.getElementById("score").innerHTML = i;
+    document.getElementById("score").innerHTML = antall_dekk;
     
    }
+   function oppgradering1(){
+
+   }
+
 
 </script>
 </body>

@@ -34,18 +34,18 @@ html body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-  }
+}
 #footer{
   background-color: black;
-    height: 20px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top:auto; 
-    bottom: 0
-  }
+  height: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top:auto; 
+  bottom: 0
+}
 ul {
     display: flex;
     justify-content: center;
@@ -68,21 +68,21 @@ ul {
   li a:hover {
     background-color: #fff
   }
-  #tire{
-    display: flex;
-    justify-content: center;
-  }
-  #score{
-    display: flex;
-    justify-content: center;
-  }
-  #header1{
-    display: flex;
-    justify-content: center;
-  }
+#tire{
+  display: flex;
+  justify-content: center;
+}
+#score{
+  display: flex;
+  justify-content: center;
+}
+#header1{
+  display: flex;
+  justify-content: center;
+}
 h1{
   color:black;
- }
+}
 #punn{
   display: flex;
   justify-content: center;

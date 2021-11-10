@@ -100,3 +100,128 @@ h1{
   display: flex;
   justify-content: center;
 }
+#tekstbox1{
+  display: flex;
+  position: absolute;
+  left: 30%;
+  top: 10%;
+  width: 1000px;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  border-radius: 4%;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  background-color: orange;
+}
+#tekstbox2{
+  display: flex;
+  position: absolute;
+  left: 30%;
+  top: 53%;
+  width: 1000px;
+  height: 500px;
+  margin: 0;
+  padding-left: 20px;
+  border-radius: 4%;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  background-color: orange;
+}
+#news_header1{
+  display: flex;
+  justify-content: center ;
+  align-content: center;
+  margin-bottom: 35%;
+}
+#news_header2{
+  display: flex;
+  justify-content: center ;
+  align-content: center;
+  margin-bottom: 3%;
+}
+#news_h4{
+  justify-content: center;
+  margin: 10px;
+  margin-bottom: 30%;
+}
+#display_shop {
+  width: 30%;
+  background-color: orange;
+  height: 80%;
+  margin-top: 2%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+#overskrift {
+  font-size: 50px;
+  margin: 5%;
+}
+
+#score {
+  margin-bottom: 5%;
+}
+
+#shop {
+  background-color: orange;
+  width: 60%;
+  height: 80%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop_item {
+background-color: teal;
+  width: 300px;
+  height: 200px;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#items_shop {
+  padding: 1%;
+  margin-top: 2%;
+  width: 90%;
+  height: 85%;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4%;
+}
+
+.shop_item_div {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.shop_item img {
+  width: 100%;
+  height: 100%;
+}
+
+#info {
+  background-color: orange;
+  width: 20%;
+  margin-left: 5%;
+  height: 80%;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6%;
+}
+
+.shop_item p {
+align-self: center;
+justify-self: center;
+}

@@ -25,7 +25,7 @@ function load(type) {
         reload()
     }
     if (type === "game") {
-        document.getElementById("innhold").innerHTML = "<div id='game'><h1 id='overskrift'>Tire clicker</h1><h1 id='score'>Du har 0 dekk</h1><div id='tire' onclick='dekk()'><img src='/media/dekk.png'></div></div><div id='display_shop'><div class='items'><p>g</p></div><div class='items'><p>g</p></div><div class='items'><p>g</p></div><div class='items'><p>g</p></div><div class='items'><p>g</p></div><div class='items'><p>g</p></div></div>"
+        document.getElementById("innhold").innerHTML = "<div id='innhold'><div id='hoved-side'><h1 id='header1'>You have</h1><h1 id='score'>0</h1><div id='tire'></div><div id='index-img'><img onclick='dekk()' onmouseover='bigImg(this)' onmouseout='normalImg(this)' src='dekk.png' alt=''></div></div>"
         reload()
     }
     if(type === "news"){

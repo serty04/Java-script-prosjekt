@@ -1,7 +1,11 @@
 var antall_dekk = 0;
-var per_dekk_klikk = 1;
+var per_dekk_klikk = 0;
+var shop_felg = false;
+var shop_wide = false;
+var shop_pigg = false;
+var shop_thick = false;
 function dekk(){
- antall_dekk = antall_dekk + per_dekk_klikk;
+ antall_dekk = antall_dekk + 1 + per_dekk_klikk;
 
  document.getElementById("score").innerHTML = antall_dekk;
  
@@ -19,17 +23,62 @@ function normalImg(x) {
 x.style.height = "400px";
 x.style.width = "400px";
 }
-function load(type) {
-    if (type === "shop") {
-        document.getElementById("innhold").innerHTML = "<div id='shop'><h1>Item shop</h1><div id='items_shop'><div class='shop_item_div'><div class='shop_item' id='shop_item00'><img id='rims_img' src='https://www.pngall.com/wp-content/uploads/2/Alloy-Wheel-PNG-Picture.png' onclick='rims()'></div><div class='shop_item' id='shop_item01'><img id='wide_img' src='https://i0.wp.com/timelessmuscle.com/wp-content/uploads/2017/07/15_inch_12.png?ssl=1' onclick='wide()'></div><div class='shop_item' id='shop_item02'><img id='pigg_img' src='https://www.dekkgutta.no/uploads/1/2/3/5/123531798/published/piggdekk_2.png?1544526341' onclick='pigg()'></div></div><div class='shop_item_div'><div class='shop_item' id='shop_item03'><img id='rim_size_png' src='https://cdn.discounttire.com/sys-master/images/hc2/h9a/8812915884062/EDUwheel-size_width.png' onclick='rim_size()'></div><div class='shop_item'><p>no item</p></div><div class='shop_item'><p>no item</p></div></div><div class='shop_item_div'><div class='shop_item'><p>no item</p></div><div class='shop_item'><p>no item</p></div><div class='shop_item'><p>no item</p></div></div></div></div><div id='info'><h1>Bruker</h1><p id='mon'></p><p id='mon_click'></p><p id='mon_sec'></p></div>"
-        reload()
+
+function shop(type) {
+    if (type === "felg") {
+        if (shop_felg) {
+            window.alert('You already own this item')
+        } else {
+            if (antall_dekk >= 100) {
+                per_dekk_klikk = per_dekk_klikk + 5
+                shop_felg = true
+                antall_dekk = antall_dekk - 100
+                window.alert('you bought a new sick rims for youre tire!!!')
+            } else {
+                window.alert('You dont have enough tires')
+            }
+        }
     }
-    if (type === "game") {
-        document.getElementById("innhold").innerHTML = "<div id='innhold'><div id='hoved-side'><h1 id='header1'>You have</h1><h1 id='score'>0</h1><div id='tire'></div><div id='index-img'><img onclick='dekk()' onmouseover='bigImg(this)' onmouseout='normalImg(this)' src='dekk.png' alt=''></div></div>"
-        reload()
+    if (type === "wide") {
+        if (shop_wide) {
+            window.alert('You already own this item')
+        } else {
+            if (antall_dekk >= 300) {
+                per_dekk_klikk = per_dekk_klikk + 15
+                shop_wide = true
+                antall_dekk = antall_dekk - 300
+                window.alert('you bought a new wide tire!!')
+            } else {
+                window.alert('You dont have enough tires')
+            }
+        }
     }
-    if(type === "news"){
-        document.getElementById("innhold").innerHTML = " <div id='tekstbox1'><H1 id='news_header1'>Features being added</H1><br><br><h4></h4></div><div id='tekstbox2'><h1 id='news_header2'>Welcome</h1><br><br><h4 id=news_h4'>Welcome to tire clicker. This is a game about colecting as many tires as posible. Enjoy yourself!!.</h4></div>"
-        reload()
+    if (type === "pigg") {
+        if (shop_pigg) {
+            window.alert('You already own this item')
+        } else {
+            if (antall_dekk >= 600) {
+                per_dekk_klikk = per_dekk_klikk + 30
+                shop_pigg = true
+                antall_dekk = antall_dekk - 500
+                window.alert('you bought a new pigg tire!!')
+            } else {
+                window.alert('You dont have enough tires')
+            }
+        }
+    }
+    if (type === "thick") {
+        if (shop_thick) {
+            window.alert('You already own this item')
+        } else {
+            if (antall_dekk >= 1500) {
+                per_dekk_klikk = per_dekk_klikk + 50
+                shop_thick = true
+                antall_dekk = antall_dekk - 2000
+                window.alert('you bought a sick new thick rim!!')
+            } else {
+                window.alert('You dont have enough tires')
+            }
+        }
     }
 }

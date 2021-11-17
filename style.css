@@ -5,7 +5,7 @@
 
 html body{
   min-height: 100vh;
-  overflow: hidden;
+ 
   
 }
 
@@ -37,11 +37,13 @@ html body{
   justify-items: center;
   align-content: center;
   background-color: orange;
+  margin-right: 5%;
 }
 
 #shop{
   display: flex;
   height: 100%;
+  width: 20%;
   flex-direction: column;
   justify-content: left;
   justify-items: right;
@@ -130,11 +132,11 @@ background-color: teal;
 #items_shop {
   padding: 1%;
   margin-top: 2%;
-  width: 90%;
-  height: 85%;
+  width: 20%;
+  height: 60%;
   background-color: orange;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   border-radius: 4%;
 }
 
